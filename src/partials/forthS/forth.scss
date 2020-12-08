@@ -1,0 +1,142 @@
+/*Forth Section*/
+
+.forth__section {
+    padding: 0 0 100px 0;
+}
+.what_we__do {
+    display: flex;
+}
+.blond_man__img {
+    width: 50%;
+}
+.forth__man {
+    max-width: 570px;
+    max-height: 380px;
+    width: 100%;
+    height: 100%;
+}
+.accordion {
+    width: 50%;
+}
+.accordion:last-child {
+    margin-bottom: 0;
+}
+.accrodion__wrapper {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.accordion__icon {
+    position: absolute;
+    left: 3%;
+}
+.accordion__opener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 20px 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.accordion__opener:after {
+    content: " ";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    border-radius: 10%;
+    transform: rotate(135deg);
+    transition: transform 0.3s linear;
+}
+.accordion__status {
+    display: none;
+}
+.accordion__content {
+    overflow: scroll;
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+.accordion__content::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+.accordion__content::-webkit-scrollbar-thumb {
+    background-color: #95e1d3;
+    border-radius: 3px;
+}
+.accordion__status ~ .accordion__content {
+    height: 0px;
+    transition: height 0.2s linear;
+}
+.accordion__status:checked ~ .accordion__content {
+    height: 130px;
+    transition: height 0.2s linear;
+    margin: 20px 25px 20px 20px;
+}
+.accordion__status:checked ~ .accordion__opener::after {
+    transform: rotateZ(-45deg);
+    transition: transform 0.3s linear;
+}
+
+                            /*Media*/
+
+@media screen and (max-width:1200px){
+    .blond_man__img{
+        width: 45%;
+        margin: 0 30px;
+    }
+    .accordion{
+        width: 45%;
+    }
+}                            
+@media screen and (max-width:768px){
+    .forth__section{
+        padding: 0 0 70px 0;
+    }
+    .what_we__do{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blond_man__img{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .accordion{
+        width: 70%;
+    }
+}                            
+@media screen and (max-width:425px){  
+  .accordion__opener{
+      padding: 15px 15px 15px 60px;
+      font-size: 12px;
+  }
+  .accordion__content{
+      font-size: 13px;
+      line-height: 20px;
+  }
+} 
+@media screen and (max-width:375px){  
+    .accordion__icon{
+        width: 26px;
+        height: 26px;
+    }
+  .accordion__opener{
+      font-size: 11px;
+  }
+  .accordion__content{
+      font-size: 12px;
+      line-height: 18px;
+  }
+} 
+                           

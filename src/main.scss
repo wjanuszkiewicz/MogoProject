@@ -1,0 +1,30 @@
+@import './partials/intro/intro.scss';
+@import './partials/firstS/first.scss';
+@import './partials/stats/stats.scss';
+@import './partials/secondSection/secondS.scss';
+@import './partials/thirdS/thirdS.scss';
+@import './partials/forthS/forth.scss';
+@import'./partials/fslider/fslider.scss';
+@import './partials/fifthS/fifth.scss';
+@import './partials/logos/logos.scss';
+@import './partials/sixSection/six.scss';
+@import './partials/sslider/sslider.scss';
+@import './partials/sevenS/seven.scss';
+@import './partials/eighthS/eighth.scss';
+@import './partials/maps/maps.scss';
+@import './partials/footer/footer.scss';
+
+body ,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-family: 'Montserrat';
+}
+ul{
+  list-style-type:none ;
+  cursor: pointer;
+  display: flex;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

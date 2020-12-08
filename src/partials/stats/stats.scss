@@ -1,0 +1,82 @@
+/*Statistics*/
+
+.statistics {
+    width: 100%;
+    background-image: url("./img/firstSection/Rectangle_7.jpg");
+}
+.stat__items {
+    display: flex;
+    text-align: center;
+}
+.stat__items:last-child {
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.3);
+}
+
+.statistic_colomns {
+    width: 20%;
+    border-left: 1px solid rgba($color: #fff, $alpha: 0.3);
+    padding: 90px 0;
+}
+.statistic__numbers {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.statistic__text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+                            /*Media*/
+
+@media screen and (max-width:768px){
+    .statistic__numbers {
+        font-size: 60px;
+    }
+    .statistic__text{
+        font-size: 13px;
+    }
+}                           
+@media screen and (max-width:425px){
+    .stat__items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .statistic_colomns{
+        width: 33%;
+        border: 0; 
+        padding: 40px 0;
+    }
+    .statistic__numbers {
+        font-size: 60px;
+    }
+    .statistic__text{
+        font-size: 13px;
+    }
+}                           
+@media screen and (max-width:375px){
+    .statistic_colomns{
+        padding: 30px 0;
+    }
+    .statistic__numbers {
+        font-size: 50px;
+    }
+    .statistic__text{
+        font-size: 12px;
+    }
+}                           
+@media screen and (max-width:320px){
+    .statistic_colomns{
+        padding: 20px 0;
+    }
+    .statistic__numbers {
+        font-size: 40px;
+    }
+    .statistic__text{
+        font-size: 11px;
+    }
+}                           

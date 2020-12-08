@@ -1,0 +1,107 @@
+/*Eighth Section*/
+
+.eighth__section {
+    padding-bottom: 115px;
+}
+.blogs {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__item {
+    width: 32%;
+}
+.blog__header {
+    position: relative;
+}
+.blog__img {
+    max-width: 380px;
+    max-height: 240px;
+    height: 100%;
+    width: 100%;
+}
+.date__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: -2%;
+    padding: 15px;
+    background-color: #95e1d3;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.date__month {
+    font-family: "Roboto Light";
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+}
+.blog__content {
+    margin-top: 10px;
+}
+.blog__title {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.blog__text {
+    color: #999999;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 350px;
+}
+
+                          /*Media*/
+
+@media screen and (max-width:1200px){
+    .blogs{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog__item{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+}                      
+@media screen and (max-width:768px){
+    .blog__item{
+        width: 80%;
+        margin-top: 30px;
+    }
+}                      
+@media screen and (max-width:425px){
+    .eighth__section{
+        padding-bottom: 70px;
+    }
+    .date__block{
+        padding: 10px;
+        font-size: 26px;
+    }
+    .blog__title{
+      font-size:12px ;
+      margin-bottom: 0px;  
+    }
+    .blog__text{
+        margin-top: 10px;
+      font-size: 13px;
+      line-height: 22px;
+    }
+}                      
+@media screen and (max-width:375px){
+    .blog__text{
+      line-height: 20px;
+    }
+}                      
